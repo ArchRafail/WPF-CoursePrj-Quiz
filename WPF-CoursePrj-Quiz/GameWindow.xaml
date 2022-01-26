@@ -104,7 +104,7 @@
                 By pressing the button the progress will be saved!
             </Button.ToolTip>
         </Button>
-        <Button x:Name="Close" Grid.Row="13" Grid.Column="1" Content="Close game" Style="{StaticResource MinorButtonStyle}" Background="LightCoral" Click="Close_Click">
+        <Button x:Name="Close" Grid.Row="13" Grid.Column="1" Content="Exit game" Style="{StaticResource MinorButtonStyle}" Background="LightCoral" Click="Close_Click">
             <Button.ToolTip>
                 By pressing the button the progress will not be saved!
             </Button.ToolTip>
