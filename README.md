@@ -21,7 +21,7 @@ There are 3 difficult levels:</br>
 </br>
 Question picks up from file Quiz And Answers.txt and shows randomly from list.</br>
 Each question has 4 variants of answer where just one is right.</br>
-During game user can use:
+During game user can use:</br>
 - Button 50%/50% and only 2 answers will shows for him/her, where 1 of them will be correct.</br>
 - Button Hall's Help, and 1 answer will shows for him/her. There is no 100% guarantee that answer will be correct.</br>
 </br>
