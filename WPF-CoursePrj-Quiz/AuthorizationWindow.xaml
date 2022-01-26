@@ -1,0 +1,63 @@
+﻿<Window x:Class="WPF_CoursePrj_Quiz.AuthorizationWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_CoursePrj_Quiz"
+        mc:Ignorable="d"
+        Title="AuthorizationWindow" Height="315" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2">
+            <Label Content="Intellectual Quiz" HorizontalAlignment="Center" FontFamily="Gabriola" FontWeight="Bold" FontSize="26"/>
+            <Label Content="Dear User. To play the game Quiz you must be authorizated." HorizontalAlignment="Center" FontFamily="Gabriola" FontSize="16"/>
+            <Label Content="If You have no personal account You can create a new one." HorizontalAlignment="Center" FontFamily="Gabriola" FontSize="16"/>
+        </StackPanel>
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Login" Margin="25,0,0,0"/>
+        <TextBox x:Name="Login" Grid.Row="1" Grid.Column="1" Height="20" Margin="20,0,20,0">
+            <TextBox.ToolTip>
+                The name must starts from the uppercase letter and contains at least 2 sequences letters.
+            </TextBox.ToolTip>
+        </TextBox>
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Password" Margin="25,0,0,0"/>
+        <TextBox x:Name="Password" Grid.Row="2" Grid.Column="1" Height="20" Margin="20,0,20,0">
+            <TextBox.ToolTip>
+                Password should contains 4 symbols: letters (upper or lower case) or numbers.
+            </TextBox.ToolTip>
+        </TextBox>
+
+        <StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" Orientation="Horizontal" >
+            <RadioButton x:Name="Authorization" Margin="20,5,20,5" VerticalContentAlignment="Center" IsChecked="True">
+                <WrapPanel>
+                    <Image Source="/Images/Auth.png" Height="20"/>
+                    <Label Content="Authorization account" VerticalContentAlignment="Center"/>
+                </WrapPanel>
+            </RadioButton>
+            <RadioButton x:Name="Registration" Margin="10,5,20,5" VerticalContentAlignment="Center">
+                <WrapPanel>
+                    <Image Source="/Images/Regist.png" Height="20"/>
+                    <Label Content="Registration account" VerticalContentAlignment="Center"/>
+                </WrapPanel>
+            </RadioButton>
+        </StackPanel>
+
+        <Button x:Name="Enter" Grid.Row="4" Grid.Column="0" Content="Enter" Height="28" Width="155" Click="Enter_Click"/>
+        <Button x:Name="Cancel" Grid.Row="4" Grid.Column="1" Content="Cancel" Height="28" Width="155" Click="Cancel_Click"/>
+        
+    </Grid>
+</Window>
